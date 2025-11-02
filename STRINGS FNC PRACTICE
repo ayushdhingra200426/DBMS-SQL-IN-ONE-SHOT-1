@@ -1,0 +1,48 @@
+EXERCISE - 3
+
+CREATE TABLE employees (
+    emp_id INT,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    desig VARCHAR(50),
+    dept VARCHAR(50)
+);
+
+INSERT INTO employees VALUES
+(101, 'Raju', 'Sharma', 'Manager', 'Loan'),
+(102, 'Sham', 'Verma', 'Cashier', 'Cash'),
+(103, 'Baburao', 'Apte', 'Associate', 'Loan'),
+(104, 'Paul', 'Joseph', 'Accountant', 'Account'),
+(105, 'Alex', 'Fernandes', 'Associate', 'Deposit'),
+(106, 'Rick', 'Brown', 'Manager', 'Account'),
+(107, 'Leena', 'Patel', 'Lead', 'Cash'),
+(108, 'John', 'Mathew', 'Manager', 'IT'),
+(109, 'Alex', 'Mishra', 'Probation', 'Loan');
+
+-- To view as before, including last name
+SELECT CONCAT_WS(':', emp_id, CONCAT(fname,' ', lname), desig, dept) AS employee_details
+FROM employees;
+
+-- TO ADD DFEPARTMENT FIRST LETTER TO THE EMP ID
+
+SELECT CONCAT(LEFT(dept,1), emp_id) AS emp_code, fname AS employees
+FROM employee;
+
+LIKE OUTPUT->
+emp_code | employees
+----------+-----------
+L101      | Raju
+C102      | Sham
+L103      | Baburao
+A104      | Paul
+D105      | Alex
+A106      | Rick
+C107      | Leena
+I108      | John
+L109      | Alex
+
+
+
+
+
+
