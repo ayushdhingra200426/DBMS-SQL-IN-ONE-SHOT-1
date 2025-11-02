@@ -1,0 +1,120 @@
+SQL IS USED TO TALK TO OUR DATABASE
+MYSQL->DBMS WHICH USES SQL TO TALK TO THE DATABASE
+
+// update syntax
+UPDATE table_name
+SET conditon
+where unique_identifer_ofthatrecord;
+
+// use of string functions 
+CONCAT->
+
+CONCAT(first_col,second_col);
+CONCAT(first_word,second_word);
+
+SELECT CONCAT('AYUSH','DHINGRA');
+
+use with concat ws(separator)
+just specify which seprator to use like  ' ', ',', '-'
+
+SELECT CONCAT_WS(' ', 'Ayush', 'Dhingra', 'CSE') AS FullName;
+
+output ->  FullName
+----------------
+Ayush Dhingra CSE
+
+USE OF SUBSTRING -> during substring operation assume one based indexing of the string 
+
+SELECT SUBSTRING('STRING_NAME',STARTNO,ENDNO);
+
+SELECT SUBSTRING('Hello Buddy',1,4);
+output->Hell
+
+SELECT SUBSTRING('Hey Buddy',1,4);
+output-> Hey
+
+2) REPLACE FUNCTION
+
+SELECT REPLACE('Hello Buddy','Hello','Hey');
+output-> Hey Buddy
+
+// use of reverse function
+
+SELECT REVERSE('Hello);
+
+// use of upper and lower case for conversion to lower case and upper case 
+
+SELECT UPPER('AYUSH');
+SELECT LOWER('Dhingra);
+
+// use of char_length
+
+SELECT CHAR_LENGTH('RAJU');
+
+// use of insert
+
+select insert('hey wassup',5,0,'Raju ');
+
+output-> hey wassup Raju
+
+// use of left
+
+select left('string',3);
+
+output-> str
+
+
+// use of right is same as to select characters from the right position
+
+// use of repeat 
+
+select repeat('hahaha',4);
+output-> hahaha
+hahaha
+hahaha
+hahaha
+
+// use of trim
+
+select trim('     hello    ');
+output-> hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
