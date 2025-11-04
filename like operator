@@ -1,0 +1,6 @@
+like operator use 
+select * from employees where name like "____";
+like here 4 underscore are taken so that it only take names with starting of their 4 characters
+
+
+
