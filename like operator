@@ -3,4 +3,22 @@ select * from employees where name like "____";
 like here 4 underscore are taken so that it only take names with starting of their 4 characters
 
 
+use of limit
+tells us the number of rows that we have to return
+
+select * from employees limit 3,3;
+
+first 3 tells us the row to skips and then the next number tells us the number of rows that we have to print 
+
+// extract the departments that how many department are present like returing the count of the departments
+
+select count(distinct dept) from employees;
+
+
+
+
+
+
+
+
 
