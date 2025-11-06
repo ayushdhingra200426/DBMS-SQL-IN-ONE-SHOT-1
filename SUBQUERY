@@ -9,6 +9,8 @@ so if you want the name of the person with the highest salary you have to use th
 
 
 
+select emp_id,fname from employees where salary=(select max(salary) from employees);
 
+this is the correct query of you want to display the record with the aggregate functions just use sub queries
 
 
