@@ -1,0 +1,14 @@
+If you wanted max salary for each name
+
+SELECT fname, MAX(salary)
+FROM employees
+GROUP BY fname;
+
+select fname,max(salary) from employees; // this will display wrong output of the name with the highest salary
+so if you want the name of the person with the highest salary you have to use the subqueries
+
+
+
+
+
+
