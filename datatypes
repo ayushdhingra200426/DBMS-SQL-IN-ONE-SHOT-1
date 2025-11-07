@@ -1,0 +1,18 @@
+USE OF DECIMAL 
+THE MAXIMUM NUMBER OF DIGITS FOR DECIMAL IS 65 
+
+DECIMAL(5,2)
+FIRST NO TELL THE NO OF DIGITS 
+AND SECOND NO TELL AFTER WHIHC WE HAVE TOP APPLY DECIMal
+
+if we use insert into num1 values(15.878);
+then result will be rounded off to 15.88
+
+`
+
+
+
+
+
+
+
