@@ -50,6 +50,56 @@ in dateformat jdt is written to tell what to which column we have to apply the f
 select DATEDIFF('2025-06-03','2025-06-08'); RESULT IS -5
 select DATEDIFF('2025-06-08','2025-06-03'); RESULT IS 5 
 
+ANOTHER METHODS ARE 
+
+DATE_ADD(date,INTERVAL expr unit)
+DATE_SUB(date,INTERVAL expr unit)
+
+syntax is ->
+
+select DATE_ADD('2023-05-01',INTERVAL 1 DAY)
+select DATE_ADD('2023-05-01',INTERVAL 1 YEAR)
+select DATE_ADD('2023-05-01',INTERVAL 1 MONTH)
+
+THIS IS USED TO SHOW THE USED WHAT WILL BE THE DATE AFTER THE INTERVAL 
+
+FOR EXAMPLE
+
+SELECT DATE_ADD(NOW(),INTERVAL 1 YEAR);
+NOW OTHER METHOD WHICH HAS THE SUB WORKING IS 
+
+SELECT DATE_SUB('2023-04-21',INTERVAL 1 MONTH);
+// TIMED DIFF
+
+SELECT TIMEDIFF('23:00:00','20:00:50');
+output -> 02:59:10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
