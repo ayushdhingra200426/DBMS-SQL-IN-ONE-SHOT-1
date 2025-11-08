@@ -7,6 +7,74 @@ CURDATE()
 CURTIME()
 NOW()
 
+MORE METHODS ARE
+
+DAYNAME()
+DAYOFMONTH()
+DAYOFWEEK()
+
+TO EXTRACT MONTH
+MONTH()
+YEAR()
+DATE()
+
+HOUR()
+
+for example we want date as per our norms like 
+
+21st tuesday at 21:20:28
+
+then use select DATE_FORMAT();
+
+SELECT DATE_FORMAT(NOW(), '%D %a at %T');
+
+if we want of the format 
+that the result is 04/16/23
+
+capital alphabet with the suffix indicates the day with 'st'
+
+like above it is written that day is 21st
+
+there are various other like %d/%m/%y
+for day/month/year
+
+for example table is given with jd,jt,jdt
+
+and we have to apply this date format to the jdt 
+
+then we will use it by 
+
+select jdt,DATE_FORMAT(jdt,'%D %a at %k') from table_name;
+in dateformat jdt is written to tell what to which column we have to apply the format
+
+select DATEDIFF('2025-06-03','2025-06-08'); RESULT IS -5
+select DATEDIFF('2025-06-08','2025-06-03'); RESULT IS 5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
