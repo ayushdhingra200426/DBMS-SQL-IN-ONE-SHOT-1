@@ -1,0 +1,12 @@
+CREATE TABLE blogs(
+    blog VARCHAR(150),
+    ct DATETIME DEFAULT CURRENT_TIMESTAMP,
+    ut DATETIME ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO blogs (blog)
+VALUES ('This is my first blog');
+
+SELECT * FROM blogs;
+
+
