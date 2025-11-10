@@ -16,3 +16,9 @@ Once the transaction is committed, the changes will remain even if the system cr
 
 Remember like this for fast recall:
 All-or-nothing, Correct state, Independent transactions, Data stays.
+
+KEY POINTS TO REMEMBER
+
+
+FOREIGN KEY CAN ACCEPT NULL VALUES
+
