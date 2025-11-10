@@ -22,3 +22,22 @@ KEY POINTS TO REMEMBER
 
 FOREIGN KEY CAN ACCEPT NULL VALUES
 
+Serializable Schedule
+
+A schedule is Serializable if its final result is same as if the transactions were executed one by one (serially).
+It maintains correctness of the database.
+
+In short:
+
+Serializable = Same final result as serial execution = Correct & safe
+
+Non-Serializable Schedule
+
+A schedule is Non-Serializable if its final result is NOT same as any serial execution of transactions.
+It may produce wrong or inconsistent data.
+
+In short:
+
+Non-Serializable = Final result differs from serial execution = Can be incorrect
+
+
