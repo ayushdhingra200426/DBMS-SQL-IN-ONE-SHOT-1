@@ -40,4 +40,60 @@ In short:
 
 Non-Serializable = Final result differs from serial execution = Can be incorrect
 
+ARIES (Write-Ahead Logging)
+
+ARIES stands for:
+
+Algorithms for
+Recovery and
+Isolation
+Exploiting
+Semantics
+
+It is a database recovery technique used when the system crashes.
+
+Key Idea of ARIES
+
+ARIES uses Write-Ahead Logging (WAL):
+
+Log is written first, then data is written to database.
+
+So if a crash happens, data can be recovered from the log.
+
+Why is ARIES used?
+
+It helps to:
+
+Undo incomplete transactions
+
+Redo completed transactions
+
+Recover database after crash
+
+One-line MCQ Answer
+
+ARIES is a recovery technique based on Write-Ahead Logging where log records are written before actual data is updated.
+
+
+Dirty Read means reading data from a transaction that has not been committed yet.
+
+If the first transaction rolls back later, the second transaction will have read wrong (dirty) data.
+
+Simple Example
+
+T1 updates a balance from 1000 → 500 (but does NOT commit yet)
+
+T2 reads the balance as 500
+
+Then T1 rolls back to 1000
+
+Now T2 has used incorrect data (because it read something that never officially happened).
+This incorrect read is called Dirty Read.
+
+One-Line MCQ answer
+
+Dirty Read occurs when a transaction reads uncommitted changes made by another transaction.
+
+
+
 
