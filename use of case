@@ -1,0 +1,9 @@
+select fname,lname,
+case 
+when salary>=40000 then 'Higher Salary'
+else 'Lower Salary'
+end
+as 'SELECT CATEGORY'
+FROM employees;
+
+
