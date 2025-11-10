@@ -1,0 +1,18 @@
+A – Atomicity
+The whole transaction is done completely or not done at all.
+(All or nothing)
+
+C – Consistency
+After the transaction, the database must remain in a valid state.
+(No rule is broken)
+
+I – Isolation
+Multiple transactions do not affect each other.
+(Each transaction works as if it is alone)
+
+D – Durability
+Once the transaction is committed, the changes will remain even if the system crashes.
+(Data is permanent)
+
+Remember like this for fast recall:
+All-or-nothing, Correct state, Independent transactions, Data stays.
