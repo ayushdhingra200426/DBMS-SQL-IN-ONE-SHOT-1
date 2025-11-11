@@ -5,6 +5,20 @@ mobile_no varchar(50) unique check(length(mobile_no) >= 10)
 
 this is how we use the constraints like unique and check or not null or default or primary key or foreign key 
 
+sometimes during the check constraint when the check constraint is violated the user will not be able to know that why the check constraint has been violated 
+to see why it has been violated we use named constraint to see
+
+create table contacts(
+name varchar(50),
+mob varchar(15) UNIQUE,
+CONSTRAINT mob_no_less_than_10 CHECK(LENGTH(mob)>=10)
+);
+
+
+
+by this if we insert the values in them and if the check constraint is violated then
+it will show that mob_no_less_than_10
+
 
 
 
