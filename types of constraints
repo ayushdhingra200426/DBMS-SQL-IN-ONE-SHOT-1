@@ -1,0 +1,10 @@
+create table contacts(
+name varchar(50),
+mobile_no varchar(50) unique check(length(mobile_no) >= 10)
+);
+
+this is how we use the constraints like unique and check or not null or default or primary key or foreign key 
+
+
+
+
