@@ -1,0 +1,7 @@
+TO RENAME 
+ALTER TABLE TABLE_NAME
+RENAME COLUMN name to full_name;
+
+
+
+
