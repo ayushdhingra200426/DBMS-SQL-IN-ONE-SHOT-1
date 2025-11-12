@@ -2,6 +2,13 @@ TO RENAME
 ALTER TABLE TABLE_NAME
 RENAME COLUMN name to full_name;
 
+how to change table name
+
+alter table table_name
+rename to new_table_name;
+
+
+
 
 
 
