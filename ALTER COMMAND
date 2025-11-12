@@ -7,6 +7,17 @@ how to change table name
 alter table table_name
 rename to new_table_name;
 
+add default vale to the column
+
+alter table table_name
+modify column_name DEFAULT 'unknown';
+
+
+
+
+
+
+
 
 
 
