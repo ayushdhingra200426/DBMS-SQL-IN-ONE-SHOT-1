@@ -4,6 +4,15 @@ SELECT NAME,IFNULL(SUM(AMOUNT),0) FROM CUSTOMERS LEFT JOIN ORDERS ON ORDERS.CUST
 
 USE OF JOINS BY CHECKING IS THE ENRTY IS NULL OR NOT 
 
+-- use of joins with the group by clause and the use of aggregate functions in joins 
+
+select c.name,sum(amount)
+from customers c
+inner join orders o
+on c.cust_id=o.cust_id
+group by name;
+
+
 
 
 
