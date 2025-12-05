@@ -1,0 +1,8 @@
+select doctor_id, name, specialty, round((consultation_fee + (consultation_fee/10)), 2) as consultation_fee
+from doctors 
+where specialty = 'Cardiologist' 
+order by doctor_id;
+
+
+or to increase use formula 1+x/100
+or use 1-x/100
