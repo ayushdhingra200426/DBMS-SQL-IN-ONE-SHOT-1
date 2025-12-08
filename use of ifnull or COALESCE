@@ -1,0 +1,7 @@
+SELECT 
+    a.author_name,
+    COALESCE(b.title, 'not found') AS title,
+    b.ratings
+FROM authors a
+LEFT JOIN books b
+ON a.author_id = b.au_id;
