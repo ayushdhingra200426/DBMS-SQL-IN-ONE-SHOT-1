@@ -1,0 +1,36 @@
+CREATE TABLE authors(
+    author_id INT AUTO_INCREMENT PRIMARY KEY,
+    author_name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE books(
+    book_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(300) NOT NULL,
+    ratings INT,
+    au_id INT,
+    FOREIGN KEY (au_id) REFERENCES authors(author_id) ON DELETE CASCADE
+);
+
+INSERT INTO authors (author_name)
+VALUES ('Raju'), ('Sham'), ('Baburao'), ('Paul');
+
+INSERT INTO books (title, ratings, au_id)
+VALUES
+('Story of Raju', 5, 1),
+('Story of Baburao', 4, 3),
+('Raju – The Great Man', 2, 1),
+('Love story by Sham', 1, 2);
+
+
+
+
+select a.author_name,b.ratings,
+case 
+when b.ratings=4 or b.ratings=5 then 'Good'
+when b.ratings=3 then 'Average'
+when b.ratings=2 or b.ratings=1 then 'under average'
+else 'not found'
+end as remark
+from authors a
+left join books b
+on a.author_id=b.au_id;
